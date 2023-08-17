@@ -1,0 +1,5 @@
+soundfile
+pip install git+https://github.com/huggingface/transformers sentencepiece datasets
+librosa
+torchaudio
+speechbrain
