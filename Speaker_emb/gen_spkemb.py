@@ -26,6 +26,7 @@ def f2embed(wav_file, classifier, size_embed):
     print(embeddings[0])
     # raw_emb = embeddings
     new_emb = embeddings[0]
+    # 这里应该多个维度取平均
     print("---check:", embeddings.shape, "---:",  size_embed, "----", embeddings.shape[0])
     # assert embeddings.shape[0] == size_embed, embeddings.shape[0]
     print("new_emb:", new_emb.shape)
