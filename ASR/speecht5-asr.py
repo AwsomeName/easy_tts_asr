@@ -11,6 +11,11 @@ dataset = dataset.sort("id")
 sampling_rate = dataset.features["audio"].sampling_rate
 example_speech = dataset[0]["audio"]["array"]
 
+print("------:", type(example_speech))
+print("------:", example_speech.shape)
+print("------:", example_speech.dtype)
+# exit()
+
 # 注意这两个应该是一样的，可以把音频或文本转为emb，作为Decoder的输入
 processor = SpeechT5Processor.from_pretrained(local_path + "microsoft/speecht5_tts")
 # processor = SpeechT5Processor.from_pretrained(local_path + "microsoft/speecht5_asr")
