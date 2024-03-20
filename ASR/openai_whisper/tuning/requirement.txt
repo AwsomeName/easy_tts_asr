@@ -6,3 +6,4 @@ jiwer
 gradio
 torch
 torchaudio
+accelerate
