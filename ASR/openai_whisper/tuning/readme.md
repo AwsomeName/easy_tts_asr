@@ -3,3 +3,8 @@
 正如随附论文中所讨论的，我们发现给定语言的转录性能与我们在该语言中使用的训练数据量直接相关。
 
 https://huggingface.co/blog/zh/fine-tune-whisper
+
+
+这个finetune，是调试OpenAI的这个whisper
+先下载数据集，git clone ， git lfs fetch， git lfs checkout
+注意，原来数据集，只尝试下载，建议替换成本目录下的脚本，可以仅加载本地的数据集。
