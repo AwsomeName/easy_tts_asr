@@ -1,5 +1,3 @@
-# 该脚本并未验证，只是博客中的代码摘录，作为研读
-
 from datasets import load_dataset, DatasetDict, load_from_disk
 from datasets.utils.info_utils import VerificationMode
 
@@ -168,7 +166,7 @@ def compute_metrics(pred):
 from transformers import WhisperForConditionalGeneration
 
 print("------ load whisper generation ...")
-model = WhisperForConditionalGeneration.from_pretrained(model_path)
+model = WhisperForConditionalGeneration.from_pretrained(model_path, device_map="auto")
 
 model.config.forced_decoder_ids = None
 model.config.suppress_tokens = []
@@ -208,6 +206,7 @@ trainer = Seq2SeqTrainer(
     data_collator=data_collator,
     compute_metrics=compute_metrics,
     tokenizer=processor.feature_extractor,
+    
 )
 
 trainer.train()

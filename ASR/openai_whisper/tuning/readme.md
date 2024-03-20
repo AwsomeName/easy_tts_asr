@@ -8,3 +8,10 @@ https://huggingface.co/blog/zh/fine-tune-whisper
 这个finetune，是调试OpenAI的这个whisper
 先下载数据集，git clone ， git lfs fetch， git lfs checkout
 注意，原来数据集，只尝试下载，建议替换成本目录下的脚本，可以仅加载本地的数据集。
+
+
+终于run起来了，如图。
+由于我的算力有限，先不继续研究了
+
+后续应该使用Q_LoRA训练——不过不一定。
+总之这个工作一定是会有人做的，以后有时间有缘再研究吧。

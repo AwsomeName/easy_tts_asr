@@ -7,3 +7,4 @@ gradio
 torch
 torchaudio
 accelerate
+tensorboard
